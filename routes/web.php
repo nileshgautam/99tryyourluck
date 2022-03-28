@@ -14,5 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('website.pages.index');
+});
+Route::get('/daily-games', function () {
+    return view('website.pages.daily-games');
+});
+Route::get('/weekly-games', function () {
+    return view('website.pages.daily-games');
+});
+Route::get('/bi-monthly-games', function () {
+    return view('website.pages.daily-games');
+});
+Route::get('/monthly-games', function () {
+    return view('website.pages.daily-games');
+});
+
+Route::get('/play-game', function () {
+    return view('website.pages.play-game');
+});
+Route::get('/contact', function () {
+    return view('website.pages.contact');
 });
